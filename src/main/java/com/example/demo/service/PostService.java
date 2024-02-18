@@ -22,12 +22,6 @@ public class PostService {
     }
 
     public PostService(){
-        initPosts();
-    }
-    private void initPosts(){
-        posts=new ArrayList<Post>(Arrays.asList(new Post((long)0,"Продается телевизор, купили новый. Торг уместен", new Date(2007)),
-                new Post((long)1,"Стерилизация - единственное гуманное и эффективное решение проблемы бездомных животных.", new Date(126,1,5)),
-                new Post((long)2,"Линька – естественный процесс обновления шерстного покрова, характерный для большинства животных.", new Date(116,4,5))));
     }
     public void create(String text) {
         Post post = new Post((long)posts.size(), text, new Date());

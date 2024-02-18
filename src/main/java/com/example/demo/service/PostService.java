@@ -22,6 +22,7 @@ public class PostService {
     }
 
     public PostService(){
+        posts = new ArrayList<>();
     }
     public void create(String text) {
         Post post = new Post((long)posts.size(), text, new Date());
